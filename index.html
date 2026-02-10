@@ -2,279 +2,331 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SMDUM Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMDUM – Privacy Policy | Smart Mobile Data Usage Monitor</title>
+  <meta name="description" content="Privacy Policy for SMDUM – a simple, local-first Android app that helps you track and manage mobile & Wi-Fi data usage without collecting or sending any personal information." />
 
-  <!-- Mobile & SEO -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Privacy Policy for SMDUM – Smart Mobile Data Usage Monitor. Learn how we collect, use, and protect your data." />
-
-  <!-- Light/Dark mode support -->
+  <!-- Theme support -->
   <meta name="color-scheme" content="light dark" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #fafafa;
+      --bg: #f8f9fc;
       --card: #ffffff;
-      --text: #222222;
-      --muted: #666666;
-      --border: #e6e6e6;
-      --accent: #2962ff;
+      --text: #1f2a44;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #3b82f6;
+      --accent-soft: #eff6ff;
+      --success: #10b981;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0f1115;
-        --card: #161a22;
-        --text: #e6e6e6;
-        --muted: #a0a0a0;
-        --border: #2a2f3a;
-        --accent: #82aaff;
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --border: #334155;
+        --accent: #60a5fa;
+        --accent-soft: #1e40af1a;
+        --success: #34d399;
       }
     }
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.7;
+      min-height: 100vh;
     }
 
     header {
-      padding: 32px 16px 16px;
+      background: linear-gradient(to bottom, var(--accent-soft), transparent);
+      padding: 5rem 1.5rem 3rem;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: -0.5px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.025em;
     }
 
-    header p {
-      margin-top: 8px;
+    header .subtitle {
+      font-size: 1.15rem;
       color: var(--muted);
-      font-size: 0.95rem;
+      max-width: 540px;
+      margin: 0 auto;
     }
 
-    main {
-      max-width: 920px;
-      margin: 0 auto 48px;
-      padding: 0 16px;
+    .container {
+      max-width: 860px;
+      margin: -4rem auto 4rem;
+      padding: 0 1.25rem;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 32px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 10px 30px -10px rgba(0,0,0,0.08);
     }
 
     h2 {
-      margin-top: 40px;
-      font-size: 1.4rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
+      font-size: 1.55rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1rem;
+      color: var(--text);
+      border-bottom: 2px solid var(--accent-soft);
+      padding-bottom: 0.5rem;
     }
 
     h3 {
-      margin-top: 24px;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1.75rem 0 0.75rem;
     }
 
-    p {
-      margin: 12px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 8px 0;
+    p, li {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
     }
 
     strong {
+      color: var(--text);
       font-weight: 600;
     }
 
-    .highlight {
-      background: rgba(41, 98, 255, 0.08);
-      border-left: 4px solid var(--accent);
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin: 16px 0;
+    .intro-box {
+      background: var(--accent-soft);
+      border-left: 5px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0 2rem;
+      font-weight: 500;
     }
 
-    footer {
+    ul {
+      list-style: none;
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    ul li {
+      position: relative;
+      margin-bottom: 0.85rem;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--accent);
+      font-size: 1.4rem;
+      position: absolute;
+      left: -1.3rem;
+      top: -0.15rem;
+    }
+
+    .permission-grid {
+      display: grid;
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    .perm-item {
+      background: var(--accent-soft);
+      padding: 1.25rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .perm-item h4 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .contact {
+      background: var(--accent-soft);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin: 2rem 0;
       text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-      padding: 24px 16px 40px;
     }
 
     a {
       color: var(--accent);
+      font-weight: 500;
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
       text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem 4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 4rem 1rem 2.5rem; }
+      header h1 { font-size: 2.1rem; }
+      .card { padding: 1.75rem 1.25rem; }
     }
   </style>
 </head>
-
 <body>
 
   <header>
     <h1>SMDUM Privacy Policy</h1>
-    <p>Effective Date: February 10, 2026</p>
+    <p class="subtitle">Smart Mobile Data Usage Monitor – A lightweight, privacy-first Android app</p>
+    <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--muted);">Effective Date: February 10, 2026</p>
   </header>
 
-  <main>
+  <div class="container">
     <div class="card">
 
-      <p>
-        Welcome to <strong>SMDUM (Smart Mobile Data Usage Monitor)</strong>.
-        Your privacy is extremely important to us. This Privacy Policy explains
-        what information we access, how it is used, and the choices you have when
-        using the SMDUM mobile application.
+      <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+        Thank you for using <strong>SMDUM</strong> — a simple tool designed to help you understand and control your mobile and Wi-Fi data usage.
       </p>
 
-      <div class="highlight">
-        <strong>Core principle:</strong> SMDUM is a local-first app. Your data stays
-        on your device and is never uploaded to our servers.
+      <div class="intro-box">
+        <strong>Our core commitment:</strong> SMDUM is built to be completely local-first. We do not collect, store, transmit, or monetize any of your personal data. Everything happens on your device — nothing is sent to us or any third party.
       </div>
 
-      <h2>1. Overview</h2>
+      <h2>1. What SMDUM Is and How It Works</h2>
       <p>
-        SMDUM is a data usage analytics utility that helps users understand and
-        manage mobile and Wi-Fi data consumption on their Android device using
-        official Android system APIs.
+        SMDUM is a personal data usage monitor for Android. It uses official Android system APIs to show you how much mobile data and Wi-Fi each app on your device is using. All processing, calculations, and storage occur locally — there are no servers, no cloud sync, and no analytics SDKs involved.
       </p>
 
-      <h2>2. Information We Collect</h2>
+      <h2>2. Information We Access (and Don’t Access)</h2>
       <p>
-        SMDUM does <strong>not</strong> collect personal information such as your
-        name, email address, phone number, contacts, messages, photos, or precise
-        location.
+        We want to be very clear: <strong>SMDUM does not collect any personally identifiable information</strong>. We never ask for or access your name, email, phone number, contacts, messages, photos, location, microphone, camera, or any other personal content.
       </p>
 
-      <h3>a. App Usage & Data Consumption (Local Only)</h3>
+      <h3>What is accessed (and stays only on your device)</h3>
       <ul>
-        <li>Mobile and Wi-Fi data usage per app</li>
-        <li>Hourly, daily, and monthly usage summaries</li>
-        <li>System-provided usage timestamps</li>
-      </ul>
-      <p>
-        This information is accessed using official Android APIs, processed
-        entirely on your device, and never transmitted externally.
-      </p>
-
-      <h3>b. App Metadata</h3>
-      <ul>
-        <li>Installed app package names</li>
-        <li>App display names and icons</li>
-      </ul>
-      <p>
-        This data is used only to display readable analytics to you.
-      </p>
-
-      <h2>3. Permissions Explanation</h2>
-
-      <h3>• Usage Access Permission</h3>
-      <p>
-        Required to read system usage statistics so SMDUM can present accurate
-        app-level data usage analytics.
-      </p>
-
-      <h3>• Network State Access</h3>
-      <p>
-        Used to distinguish between mobile data and Wi-Fi usage.
-      </p>
-
-      <h3>• Foreground Service (if applicable)</h3>
-      <p>
-        Used to ensure reliable tracking during active monitoring or alert
-        scenarios.
-      </p>
-
-      <p>
-        SMDUM does <strong>not</strong> request permissions unrelated to its core
-        functionality.
-      </p>
-
-      <h2>4. How We Use Information</h2>
-      <ul>
-        <li>Displaying charts and usage summaries</li>
-        <li>Providing user-defined data usage alerts</li>
-        <li>Improving on-device analytics accuracy</li>
+        <li>App-level mobile data and Wi-Fi usage statistics provided by Android</li>
+        <li>Timestamps and aggregated usage summaries (hourly / daily / monthly)</li>
+        <li>Basic app metadata: package names, user-facing app names, and icons (used only to make charts readable)</li>
       </ul>
 
       <p>
-        We do <strong>not</strong> sell, share, rent, or monetize your data in any
-        form.
+        All of this information comes directly from Android’s built-in UsageStatsManager and NetworkStatsManager APIs. It never leaves your device.
       </p>
 
-      <h2>5. Data Storage & Security</h2>
+      <h2>3. Permissions We Request – and Why</h2>
+      <p>
+        SMDUM only asks for the minimum permissions strictly necessary for its functionality. Here’s exactly what we need and why:
+      </p>
+
+      <div class="permission-grid">
+        <div class="perm-item">
+          <h4>Usage Access (PACKAGE_USAGE_STATS)</h4>
+          <p>Allows the app to read system usage statistics so it can show accurate per-app data consumption breakdowns.</p>
+        </div>
+
+        <div class="perm-item">
+          <h4>Network State (ACCESS_NETWORK_STATE)</h4>
+          <p>Helps distinguish between mobile data and Wi-Fi connections when displaying usage.</p>
+        </div>
+
+        <div class="perm-item">
+          <h4>Foreground Service (if enabled)</h4>
+          <p>Used only when you activate real-time alerts or monitoring features — ensures notifications work reliably in the background.</p>
+        </div>
+      </div>
+
+      <p>
+        We <strong>never</strong> request dangerous or unrelated permissions (location, contacts, storage, camera, etc.).
+      </p>
+
+      <h2>4. How Your Data Is Used</h2>
+      <p>
+        The information accessed is used solely for these purposes — all on-device:
+      </p>
       <ul>
-        <li>All data is stored locally on your device</li>
-        <li>No cloud storage or external servers are used</li>
-        <li>Uninstalling the app removes all stored data</li>
+        <li>Generating clear, visual charts and breakdowns of your data usage</li>
+        <li>Enabling custom alerts when you approach your data limit</li>
+        <li>Providing historical trends to help you manage consumption better</li>
       </ul>
 
-      <h2>6. Third-Party Services</h2>
+      <p style="font-weight: 500; color: var(--success);">
+        We do not sell, share, rent, profile, or monetize your data in any way.
+      </p>
+
+      <h2>5. Data Storage and Security</h2>
+      <ul>
+        <li>All data is stored exclusively in your device’s local storage (SQLite database)</li>
+        <li>No data is ever uploaded to any server or cloud service</li>
+        <li>When you uninstall SMDUM, all app data is automatically removed by Android</li>
+        <li>We apply standard Android security practices (encrypted local storage where applicable)</li>
+      </ul>
+
+      <h2>6. Third Parties & Advertising</h2>
       <p>
-        SMDUM does <strong>not</strong> integrate with advertising SDKs, analytics
-        services, trackers, or third-party data processors.
+        SMDUM contains <strong>no advertising SDKs</strong>, no analytics libraries (Firebase, AppsFlyer, etc.), no crash reporting tools, and no third-party trackers of any kind.
       </p>
 
       <h2>7. Children’s Privacy</h2>
       <p>
-        SMDUM is a general utility app and does not target children. We do not
-        knowingly collect data from users under the age of 13.
+        This app is not directed to children under 13. We do not knowingly collect or store any data from children.
       </p>
 
-      <h2>8. User Control & Choices</h2>
+      <h2>8. Your Rights and Controls</h2>
+      <p>
+        Because everything stays on your device, you have full control:
+      </p>
       <ul>
-        <li>Permissions can be revoked at any time via Android settings</li>
-        <li>App data can be cleared to reset analytics</li>
-        <li>Uninstalling the app fully removes all information</li>
+        <li>Revoke any permission at any time through Android Settings → Apps → SMDUM</li>
+        <li>Clear app data or cache to reset all statistics</li>
+        <li>Uninstall the app to remove everything instantly</li>
       </ul>
 
-      <h2>9. Changes to This Policy</h2>
+      <h2>9. Updates to This Policy</h2>
       <p>
-        We may update this Privacy Policy periodically. Any changes will be posted
-        on this page with an updated effective date.
+        We may occasionally update this policy to reflect new features or Android changes. The updated version will always be available here with a new effective date. We recommend checking back periodically.
       </p>
 
       <h2>10. Contact Us</h2>
-      <p>
-        If you have questions or concerns about this Privacy Policy or SMDUM’s
-        data practices, contact us at:
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:itsneeleshdev@gmail.com">itsneeleshdev@gmail.com</a><br />
-        <strong>App Name:</strong> SMDUM – Smart Mobile Data Usage Monitor
-      </p>
+      <div class="contact">
+        <p style="margin-bottom: 1rem;">
+          If you have any questions, suggestions, or concerns about privacy or the app, please reach out — we read and reply to every message.
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:itsneeleshdev@gmail.com">itsneeleshdev@gmail.com</a><br>
+          <strong>App:</strong> SMDUM – Smart Mobile Data Usage Monitor
+        </p>
+      </div>
 
-      <p>
-        By using SMDUM, you agree to this Privacy Policy.
+      <p style="text-align: center; margin-top: 2.5rem; font-size: 1.05rem;">
+        Thank you for trusting us with your data usage monitoring needs.
       </p>
 
     </div>
-  </main>
+  </div>
 
   <footer>
-    © 2026 SMDUM. All rights reserved.
+    © 2026 SMDUM. Built with care for your privacy.
   </footer>
 
 </body>
