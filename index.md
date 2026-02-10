@@ -171,7 +171,8 @@ We encourage you to review this policy periodically.
 
 If you have questions, concerns, or feedback regarding this Privacy Policy or SMDUM’s data practices, please contact us:
 
-Email: smdum.app@gmail.com
+Email: itsneeleshdev@gmail.com
+
 App Name: SMDUM – Smart Mobile Data Usage Monitor
 
 
