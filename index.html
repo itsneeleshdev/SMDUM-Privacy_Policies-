@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SMDUM – Privacy Policy | Smart Mobile Data Usage Manager</title>
-  <meta name="description" content="Privacy Policy for SMDUM – a simple, local-first Android app that helps you track and manage mobile & Wi-Fi data usage without collecting or sending any personal information." />
+  <meta name="description" content="Privacy Policy for SMDUM – Smart Mobile Data Usage Manager. A lightweight Android app that helps you track mobile & Wi-Fi data usage with optional non-intrusive AdMob ads." />
 
   <!-- Theme support -->
   <meta name="color-scheme" content="light dark" />
@@ -38,11 +38,7 @@
       }
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -68,7 +64,7 @@
     header .subtitle {
       font-size: 1.15rem;
       color: var(--muted);
-      max-width: 540px;
+      max-width: 560px;
       margin: 0 auto;
     }
 
@@ -107,10 +103,7 @@
       margin-bottom: 1rem;
     }
 
-    strong {
-      color: var(--text);
-      font-weight: 600;
-    }
+    strong { color: var(--text); font-weight: 600; }
 
     .intro-box {
       background: var(--accent-soft);
@@ -119,6 +112,15 @@
       border-radius: 8px;
       margin: 1.5rem 0 2rem;
       font-weight: 500;
+    }
+
+    .warning-box {
+      background: #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.25rem 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0 2rem;
+      color: #92400e;
     }
 
     ul {
@@ -173,8 +175,7 @@
       text-decoration: none;
     }
 
-    a:hover,
-    a:focus {
+    a:hover, a:focus {
       text-decoration: underline;
       text-underline-offset: 2px;
     }
@@ -198,119 +199,113 @@
 
   <header>
     <h1>SMDUM Privacy Policy</h1>
-    <p class="subtitle">Smart Mobile Data Usage Manager – A lightweight, privacy-first Android app</p>
-    <p style="margin-top: 1.2rem; font-size: 0.95rem; color: var(--muted);">Effective Date: February 10, 2026</p>
+    <p class="subtitle">Smart Mobile Data Usage Manager – Track your mobile & Wi-Fi data usage with optional non-intrusive ads</p>
+    <p style="margin-top: 1.2rem; font-size: 0.95rem; color: var(--muted);">Effective Date: March 29, 2026</p>
   </header>
 
   <div class="container">
     <div class="card">
 
       <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-        Thank you for using <strong>SMDUM</strong> — a simple tool designed to help you understand and control your mobile and Wi-Fi data usage.
+        Thank you for using <strong>SMDUM</strong> — a lightweight, local-first Android app that helps you monitor and manage your mobile and Wi-Fi data usage.
       </p>
 
       <div class="intro-box">
-        <strong>Our core commitment:</strong> SMDUM is built to be completely local-first. We do not collect, store, transmit, or monetize any of your personal data. Everything happens on your device — nothing is sent to us or any third party.
+        <strong>Our core commitment:</strong> SMDUM remains strongly privacy-focused. Most of the app works completely offline and locally. However, we now show occasional non-intrusive native advertisements powered by Google AdMob to support development and keep the app free.
       </div>
 
-      <h2>1. What SMDUM Is and How It Works</h2>
+      <div class="warning-box">
+        <strong>Note:</strong> Ads are shown as temporary, easily dismissible native cards. You can close them anytime by tapping the small "×" button. No personal data is used to personalize these ads.
+      </div>
+
+      <h2>1. Information We Collect and Process</h2>
       <p>
-        SMDUM is a personal data usage monitor for Android. It uses official Android system APIs to show you how much mobile data and Wi-Fi each app on your device is using. All processing, calculations, and storage occur locally — there are no servers, no cloud sync, and no analytics SDKs involved.
+        SMDUM is designed to minimize data collection. All usage statistics and calculations happen **locally on your device**.
       </p>
 
-      <h2>2. Information We Access (and Don’t Access)</h2>
-      <p>
-        We want to be very clear: <strong>SMDUM does not collect any personally identifiable information</strong>. We never ask for or access your name, email, phone number, contacts, messages, photos, location, microphone, camera, or any other personal content.
-      </p>
-
-      <h3>What is accessed (and stays only on your device)</h3>
+      <h3>Local Data (Stays on Device)</h3>
       <ul>
-        <li>App-level mobile data and Wi-Fi usage statistics provided by Android</li>
-        <li>Timestamps and aggregated usage summaries (hourly / daily / monthly)</li>
-        <li>Basic app metadata: package names, user-facing app names, and icons (used only to make charts readable)</li>
+        <li>App-level mobile data and Wi-Fi usage statistics (via Android system APIs)</li>
+        <li>Aggregated usage summaries (hourly, daily, monthly)</li>
+        <li>Basic app metadata (package name, app name, icon) for display purposes only</li>
+      </ul>
+
+      <h2>2. Advertising with Google AdMob</h2>
+      <p>
+        To keep SMDUM free and sustainable, we display occasional <strong>non-intrusive Native Ads</strong> powered by <strong>Google AdMob</strong>.
+      </p>
+
+      <p><strong>What happens when an ad is shown:</strong></p>
+      <ul>
+        <li>A temporary native ad card may appear when you open the Dashboard or App Details screen.</li>
+        <li>The ad can be closed instantly by tapping the small "×" button in the top-left corner.</li>
+        <li>Ads are shown sparingly (once per screen visit or less).</li>
+      </ul>
+
+      <h3>What Google AdMob may collect:</h3>
+      <ul>
+        <li>Your device's Advertising ID (for ad serving and frequency capping)</li>
+        <li>Device information (model, OS version, screen size) for technical ad delivery</li>
+        <li>IP address and general location (country/region level) for ad targeting</li>
+        <li>Interaction data with the ad (impressions, clicks) — but only for ad performance measurement</li>
       </ul>
 
       <p>
-        All of this information comes directly from Android’s built-in UsageStatsManager and NetworkStatsManager APIs. It never leaves your device.
+        <strong>Important:</strong> We do not share any of your usage statistics, personal data, or app activity with Google or any third party for ad targeting. AdMob uses its own data and identifiers.
       </p>
 
-      <h2>3. Permissions We Request – and Why</h2>
-      <p>
-        SMDUM only asks for the minimum permissions strictly necessary for its functionality. Here’s exactly what we need and why:
-      </p>
-
+      <h2>3. Permissions We Request</h2>
       <div class="permission-grid">
         <div class="perm-item">
-          <h4>Usage Access (PACKAGE_USAGE_STATS)</h4>
-          <p>Allows the app to read system usage statistics so it can show accurate per-app data consumption breakdowns.</p>
+          <h4>PACKAGE_USAGE_STATS</h4>
+          <p>Required to read accurate per-app data usage statistics.</p>
         </div>
-
         <div class="perm-item">
-          <h4>Network State (ACCESS_NETWORK_STATE)</h4>
-          <p>Helps distinguish between mobile data and Wi-Fi connections when displaying usage.</p>
+          <h4>ACCESS_NETWORK_STATE</h4>
+          <p>To distinguish between mobile data and Wi-Fi usage.</p>
         </div>
-
         <div class="perm-item">
-          <h4>Foreground Service (if enabled)</h4>
-          <p>Used only when you activate real-time alerts or monitoring features — ensures notifications work reliably in the background.</p>
+          <h4>FOREGROUND_SERVICE (optional)</h4>
+          <p>Used only for real-time alerts and monitoring features.</p>
         </div>
       </div>
 
-      <p>
-        We <strong>never</strong> request dangerous or unrelated permissions (location, contacts, storage, camera, etc.).
-      </p>
-
-      <h2>4. How Your Data Is Used</h2>
-      <p>
-        The information accessed is used solely for these purposes — all on-device:
-      </p>
+      <h2>4. Data Storage and Security</h2>
       <ul>
-        <li>Generating clear, visual charts and breakdowns of your data usage</li>
-        <li>Enabling custom alerts when you approach your data limit</li>
-        <li>Providing historical trends to help you manage consumption better</li>
+        <li>All your usage data is stored locally in an encrypted SQLite database on your device.</li>
+        <li>No usage data is sent to us or any third party.</li>
+        <li>When you uninstall the app, all local data is removed by Android.</li>
       </ul>
 
-      <p style="font-weight: 500; color: var(--success);">
-        We do not sell, share, rent, profile, or monetize your data in any way.
+      <h2>5. Third Parties</h2>
+      <p>
+        The only third-party service integrated in the app is <strong>Google AdMob</strong> for displaying ads. 
+        You can learn more about Google’s privacy practices here: 
+        <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.
       </p>
 
-      <h2>5. Data Storage and Security</h2>
+      <h2>6. Children’s Privacy</h2>
+      <p>
+        SMDUM is not directed at children under 13. We do not knowingly collect personal information from children.
+      </p>
+
+      <h2>7. Your Rights and Controls</h2>
       <ul>
-        <li>All data is stored exclusively in your device’s local storage (SQLite database)</li>
-        <li>No data is ever uploaded to any server or cloud service</li>
-        <li>When you uninstall SMDUM, all app data is automatically removed by Android</li>
-        <li>We apply standard Android security practices (encrypted local storage where applicable)</li>
+        <li>Reset your Advertising ID anytime via Android Settings → Google → Ads</li>
+        <li>Revoke permissions through Android Settings → Apps → SMDUM</li>
+        <li>Clear app data or uninstall the app to remove everything</li>
+        <li>Disable ads by not using the app (we show them very sparingly)</li>
       </ul>
 
-      <h2>6. Third Parties & Advertising</h2>
+      <h2>8. Updates to This Policy</h2>
       <p>
-        SMDUM contains <strong>no advertising SDKs</strong>, no analytics libraries (Firebase, AppsFlyer, etc.), no crash reporting tools, and no third-party trackers of any kind.
+        We may update this Privacy Policy as we add new features. The effective date will be updated accordingly. Continued use of the app after changes constitutes acceptance of the updated policy.
       </p>
 
-      <h2>7. Children’s Privacy</h2>
-      <p>
-        This app is not directed to children under 13. We do not knowingly collect or store any data from children.
-      </p>
-
-      <h2>8. Your Rights and Controls</h2>
-      <p>
-        Because everything stays on your device, you have full control:
-      </p>
-      <ul>
-        <li>Revoke any permission at any time through Android Settings → Apps → SMDUM</li>
-        <li>Clear app data or cache to reset all statistics</li>
-        <li>Uninstall the app to remove everything instantly</li>
-      </ul>
-
-      <h2>9. Updates to This Policy</h2>
-      <p>
-        We may occasionally update this policy to reflect new features or Android changes. The updated version will always be available here with a new effective date. We recommend checking back periodically.
-      </p>
-
-      <h2>10. Contact Us</h2>
+      <h2>9. Contact Us</h2>
       <div class="contact">
         <p style="margin-bottom: 1rem;">
-          If you have any questions, suggestions, or concerns about privacy or the app, please reach out — we read and reply to every message.
+          If you have any questions about this Privacy Policy, the ads, or how your data is handled, feel free to contact us.
         </p>
         <p>
           <strong>Email:</strong> <a href="mailto:itsneeleshdev@gmail.com">itsneeleshdev@gmail.com</a><br>
@@ -318,15 +313,16 @@
         </p>
       </div>
 
-      <p style="text-align: center; margin-top: 2.5rem; font-size: 1.05rem;">
-        Thank you for trusting us with your data usage monitoring needs.
+      <p style="text-align: center; margin-top: 2.5rem; font-size: 1.05rem; color: var(--success);">
+        Thank you for using SMDUM. We truly respect your privacy.
       </p>
 
     </div>
   </div>
 
   <footer>
-    © 2026 SMDUM. Built with care for your privacy.
+    © 2026 SMDUM. Built with care for your privacy.<br>
+    Last updated: March 29, 2026
   </footer>
 
 </body>
